@@ -9,6 +9,29 @@
 }
 
 /* 
+    TAVOLOZZA DEI COLORI
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #F5F5F5;
+    --medium-grey: #C9C9C9;
+    --dark-grey: #999999;
+    --blue: #0061FF;
+    --medium-blue: #0093CE;
+    --light-blue: #B4D0E7;
+    --dark-blue: #0D2481;
+    --green: #A2D39B;
+    --light-green: #D1E9CD;
+    --yellow: #FFD830;
+    --red: #D5001F;
+    --bright-red: #FF1C1C; 
+    --bordeaux: #61082B;
+ 
+}
+
+/* 
     GENERAL
 */
 
