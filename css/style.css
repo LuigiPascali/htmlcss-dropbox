@@ -31,10 +31,98 @@
  
 }
 
+
+
 /* 
     GENERAL
 */
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color: var(--black);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+button {
+    padding: 5px 10px ;
+}
+
+ul {
+    list-style: none;
+}
+
+li, button {
+    font-size: 15px;
+}
+
+
+
+/* 
+    UTILITIES
+*/
+
+.blue-button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+.fl-basis {
+    flex-basis: 35%;
+}
+
+
+
+/* 
+    NAVBAR
+*/
+
+.navbar {
+    background-color: var(--white);
+    height: 100px;
+    padding: 0 5px;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.navbar .right {
+    justify-content: flex-end;
+}
+
+.actions > ul {
+    display: flex;
+    padding: 25px 0;
+}
+
+.left li {
+    padding: 25px 10px;
+}
+
+.right li {
+    padding: 20px 10px;
+}
+
+.logo {
+    padding: 25px 0;
+}
+
+.logo > img {
+    width: 90%;
+    padding: 5px;
+}
+
+.nav-button {
+    position: relative;
+    bottom: 2px;
 }
