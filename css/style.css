@@ -40,6 +40,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--black);
+    padding-top: 70px;
 }
 
 header {
@@ -62,6 +63,15 @@ li, button {
     font-size: 15px;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+}
+
 
 
 /* 
@@ -82,6 +92,10 @@ li, button {
     flex-basis: 35%;
 }
 
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
 
 
 /* 
@@ -90,7 +104,7 @@ li, button {
 
 .navbar {
     background-color: var(--white);
-    height: 100px;
+    height: 70px;
     padding: 0 5px;
     flex-basis: 100%;
     align-items: center;
@@ -102,7 +116,7 @@ li, button {
 
 .actions > ul {
     display: flex;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .left li {
@@ -126,3 +140,37 @@ li, button {
     position: relative;
     bottom: 2px;
 }
+
+/* 
+    JUMBOTRON
+*/
+
+.jumbotron {
+    height: 480px;
+    background-color: var(--light-blue);
+    padding-top: 30px;
+}
+
+.title {
+    width: 80%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.content {
+    width: 100%;
+}
+
+.description > * {
+    margin-bottom: 20px;
+}
+
+.description a {
+    color: var(--black);
+}
+
+.jumbotron-image {
+    flex-basis: 65%;
+    height: 320px;
+}
+
