@@ -49,6 +49,8 @@
     background-color: var(--white);
 }
 
+
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -74,6 +76,17 @@ h1 {
 /* 
     HEADER
 */
+
+header {
+
+    position:fixed;
+    width: 100%
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
 
 .navbar ul li {
     display: inline-block;
