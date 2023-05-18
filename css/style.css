@@ -49,6 +49,10 @@
     background-color: var(--white);
 }
 
+/* 
+    GENERAL CONTAINER
+*/
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -59,13 +63,29 @@
     margin: auto;
 }
 
-.info-col-small {
-    width: 30%;
+.user-container {
+    display: flex;
 }
 
-.info-col-big {
-    width: 70%;
+.single-user-container {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.single-user {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+    GENERAL ROW
+*/
 
 .jumbo-row {
     display: flex;
@@ -78,6 +98,19 @@
     margin: 0 -20;
 }
 
+
+/* 
+    GENERAL COLUMNS
+*/
+
+.info-col-small {
+    width: 30%;
+}
+
+.info-col-big {
+    width: 70%;
+}
+
 .col-1-3 {
     width: calc((100% / 3) - 40px);
     margin: 0 20px;
@@ -88,6 +121,15 @@
     width: calc(100% - 40px);
     margin: 0 20px;
 }
+
+.col-1-5 {
+    width: (100% / 5);
+    margin: 0 20px;
+}
+
+/* 
+    GENERAL HEADER TEXT
+*/
 
 h1 {
     font-size: 80px;
@@ -230,6 +272,72 @@ header {
     TEAM USER SECTION
 */
 
+.team-user .small-container h3 {
+    margin-bottom: 50px;
+    padding-left: 20px;
+    font-size: 40px ;
+}
+
+.team-user .small-container a {
+    padding-left: 20px;
+    color: var(--blue);
+} 
+
+.team-user .user-container {
+    margin-top: 100px;
+}
+
+.small-logo {
+    width: 150px;
+    margin: 50px;
+}
+
+.big-logo {
+    width: 300px;
+    padding: 50px;
+}
+
+.single-user-container p span {
+    margin: 50px;
+}
+
+.green {
+    background-color: var(--green);
+    border: 10px solid var(--light-green);
+}
+
+.bordeaux {
+    background-color: var(--bordeaux);
+}
+
+.medium-blue {
+    background-color: var(--medium-blue);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+.bright-red {
+    background-color: var(--bright-red);
+}
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
 
 
 /* 
@@ -297,19 +405,37 @@ header {
     border-bottom: 1px solid var(--black);
 }
 
+.faq .small-container .faq-questions h5 {
+    font-size: 18px;
+}
+
 .fa-chevron-down {
-    padding: 20px;
+    padding: 50px;
 }
 
 /* 
     FOOTER TOP SECTION
 */
 
-
+.footer-top {
+    background-color: var(--black);
+}
 
 /* 
     FOOTER BOTTOM SECTION    
 */
 
+.footer-bottom {
+    background-color: var(--black);
+}
 
+/* 
+    DEBUG
+*/
+
+.debug .footer-top .container .my-row .col-1-5 {
+    min-height: 500px;
+    background-color: var(--green);
+    border: 3px dashed white;
+}
 
