@@ -357,8 +357,6 @@ header {
 
 
 
-
-
 /* 
     OPERATION SECTION
 */
@@ -405,7 +403,12 @@ header {
 
 .big-logo {
     width: 300px;
-    padding: 50px;
+    margin-top: -40px;
+    padding: 30px;
+}
+
+.cit {
+    padding: 0 30px 0 30px;
 }
 
 .single-user-container p span {
