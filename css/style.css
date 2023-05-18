@@ -49,6 +49,8 @@
     background-color: var(--white);
 }
 
+
+
 /* 
     GENERAL CONTAINER
 */
@@ -83,6 +85,7 @@
 }
 
 
+
 /* 
     GENERAL ROW
 */
@@ -97,6 +100,13 @@
     flex-wrap: wrap;
     margin: 0 -20;
 }
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -20;
+}
+
 
 
 /* 
@@ -123,9 +133,11 @@
 }
 
 .col-1-5 {
-    width: (100% / 5);
+    width: calc(100% / 5);
     margin: 0 20px;
 }
+
+
 
 /* 
     GENERAL HEADER TEXT
@@ -140,6 +152,14 @@ h2 {
     margin-left: 20px;
     font-size: 40px;
 }
+
+h4 {
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+
 
 /* 
     HEADER
@@ -172,6 +192,8 @@ header {
     color: var(--white);
 }
 
+
+
 /* 
     JUMBOTRON
 */
@@ -203,6 +225,8 @@ header {
     margin-top: 100px;
     font-size: 50px;
 }
+
+
 
 /* 
     BUSINESS PLAN SECTION
@@ -250,6 +274,8 @@ header {
     padding: 15px;
 }
 
+
+
 /* 
     OPERATION SECTION
 */
@@ -267,6 +293,8 @@ header {
     margin-bottom: 30px;
     font-size: 25px;
 }
+
+
 
 /* 
     TEAM USER SECTION
@@ -299,6 +327,7 @@ header {
 
 .single-user-container p span {
     margin: 50px;
+    padding: 50px;
 }
 
 .green {
@@ -377,7 +406,6 @@ header {
 
 
 
-
 /* 
     FAQ SECTION 
 */
@@ -413,29 +441,64 @@ header {
     padding: 50px;
 }
 
+
+
 /* 
-    FOOTER TOP SECTION
+    FOOTER
 */
 
-.footer-top {
+footer {
+    margin-top: 150px;
+    padding-top: 50px;
     background-color: var(--black);
 }
 
-/* 
-    FOOTER BOTTOM SECTION    
-*/
 
-.footer-bottom {
-    background-color: var(--black);
+footer ul li a {
+    color: var(--white);
+    margin-bottom: 15px;
+    display: inline-block;
+    text-decoration: none;
 }
+
+footer i {
+    color: var(--white);
+}
+
+footer .language {
+    color: var(--white);
+    width: 20%;
+    margin-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid var(--white);
+}
+
+
+
+
 
 /* 
     DEBUG
 */
 
-.debug .footer-top .container .my-row .col-1-5 {
+/* .debug footer {
     min-height: 500px;
     background-color: var(--green);
     border: 3px dashed white;
 }
+
+.debug footer section {
+    background-color: red;
+    border: 3px dashed black;
+    min-height: 300px;
+}
+
+.debug footer section .col-1-5 {
+    background-color: wheat;
+    border: 3px dashed blue;
+    min-height: 300px;
+} */
+
+
 
