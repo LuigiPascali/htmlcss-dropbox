@@ -166,17 +166,19 @@ header {
     BUSINESS PLAN SECTION
 */
 
-.col-1-3, .single-col {
-    border: 1px solid var(--grey);
-}
-
-.pricing-top {
-    border-bottom: 1px solid var(--grey);
-}
-
 .business-plan {
     margin-bottom: 100px;
 }
+
+.business-plan .col-1-3, .single-col {
+    border: 1px solid var(--grey);
+}
+
+.business-plan .pricing-top {
+    border-bottom: 1px solid var(--grey);
+}
+
+
 
 
 /* 
@@ -192,7 +194,7 @@ header {
 }
 
 .info-col-small h3 {
-    font-size: 1.5em;
+    font-size: 25px;
 }
 
 .info-col-small p {
@@ -201,7 +203,7 @@ header {
 }
 
 .info-col-small a {
-    border: 1px solid grey;
+    border: 1px solid var(--medium-grey);
     text-decoration: none;
     padding: 15px;
 }
@@ -212,6 +214,14 @@ header {
 
 .operation {
     margin-bottom: 100px;
+}
+
+.operation .col-1-3 img {
+    width: 100%;
+} 
+
+.operation .col-1-3 h3 {
+    margin-bottom: 30px;
 }
 
 /* 
@@ -278,17 +288,3 @@ header {
 
 
 
-/* 
-    DEBUG
-*/
-.debug .col-1-3 {
-    min-height: 300px;
-    background-color: var(--white);
-
-}
-
-.debug .single-col {
-    min-height: 300px;
-    background-color: var(--white);
-
-}
