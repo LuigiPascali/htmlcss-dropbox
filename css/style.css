@@ -399,6 +399,7 @@ header {
 .small-logo {
     width: 150px;
     margin: 50px;
+    filter: invert(100%) sepia(2%) saturate(2%) hue-rotate(104deg) brightness(109%) contrast(101%);
 }
 
 .big-logo {
