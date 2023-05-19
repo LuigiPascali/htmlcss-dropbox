@@ -230,11 +230,33 @@ header {
 }
 
 .fa-arrow-down {
-    margin-top: 200px;
+    margin-top: 120px;
     font-size: 50px;
 }
 
+.bounce-element {
+    transition: transform 0.3s ease-in-out;
+}
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+    
+.bounce-element:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+  
 
 /* 
     BUSINESS PLAN SECTION
@@ -326,6 +348,9 @@ header {
     color: var(--blue);
 }
 
+.fa-ul {
+    padding-bottom: 20px;
+}
 
 
 /* 
@@ -506,6 +531,7 @@ header {
 }
 
 .faq .small-container .faq-title h2 {
+    margin-left: 45px;
     margin-bottom: 40px;
     font-size: 40px;
 }
@@ -514,9 +540,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
     border-bottom: 1px solid var(--black);
 }
 
@@ -525,10 +551,28 @@ header {
 }
 
 .fa-chevron-down {
-    padding: 50px;
+    padding: 70px;
 }
 
+.faq-questions {
+    position: relative;
+}
+  
+.faq-questions .faq-answer {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+  
+.faq-questions:hover .faq-answer {
+    display: block;
+}
 
+  
 
 /* 
     FOOTER
@@ -563,3 +607,11 @@ footer .language {
 
 
 
+/* 
+    NOTE
+*/
+
+/* 
+    Per cambiare colore ai file .svg ho utilizzato questo tool su Code-Pen: 
+    https://codepen.io/sosuke/pen/Pjoqqp
+*/
